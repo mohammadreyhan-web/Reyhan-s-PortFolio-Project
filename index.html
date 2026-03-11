@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PortFolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <div><p style="text-align: center; font-size: 24px;background-color: #766e6e; padding: 10px;color: aliceblue; font-weight: bolder;">My PortFolio</p></div>
+        <header class="navbar">
+        <div class="name">
+            <span class="r">R</span>eyhan.</div>
+        <div class="center">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+      </div>
+        
+    </header>
+    <div class="pic">
+        <img src="WhatsApp Image 2026-03-10 at 11.45.36.jpeg" alt="photo" class="photo">
+        <h1>I'm Mohammad Reyhan</h1>    
+        <h2>Web Developer</h2>
+        <h3>Student at KL University</h3>
+            <p id="para">Click me</p>
+    <button id="button">click button</button>
+    <script>
+        document.getElementById("para").onclick=function(){
+            fun()
+        };
+        document.getElementById("button").onclick=function(){
+            fun1()
+        };
+        function fun(){
+            document.getElementById("para").innerHTML="Welcome to My Portfolio";
+            document.getElementById("para").style.color="blue";
+            document.getElementById("para").style.backgroundColor="yellow";
+            document.getElementById("para").style.fontSize="25px";
+            document.getElementById("para").style.border="4px solid red";
+        }
+        function fun1(){
+            document.getElementById("button").innerHTML="Welcome To My Portfolio"
+            document.getElementById("button").style.color="green";
+            document.getElementById("button").style.fontSize="20px";
+        }
+    </script>
+    <br><br>
+    </div>
+    <div class="footer">    
+        ©2026 My PortFolio
+    </div>
+</body>
+</html>
