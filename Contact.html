@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact</title>
+ <link rel="stylesheet" href="portfolio.css">
+ <link rel="icon" href="contact.png">
+</head>
+<body>
+     <p style="text-align: center; font-size: 24px; "><b>My PortFolio</b></p>
+    <header class="navbar">
+        <div class="name">
+            <span class="r">R</span>eyhan.
+        
+</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+
+            </ul>
+        </nav>
+        
+    </header>
+       <fieldset>
+            <legend>User Information</legend>
+            <label for="name">Enter Name</label>
+            <input type="text" id="name" name="name"><br>
+             <label for="name">Enter Your Mobile Number</label>
+             <input type="text" pattern="[0-9]{10}" placeholder="10 digit mobile number">
+             <br>
+             
+             <label>Message</label>
+             <textarea placeholder="Write you Message"></textarea>
+             <br><input type="submit">
+        </fieldset>
+    <div class="main-div">
+            <h2 class="h1">
+                CONTACT ME
+              </h2>
+            <div class="div-1">
+                <div>
+                    Phone : 7396673790
+                </div>
+                <div>
+                    Email :mohammedreyhan18@gmail.com
+                </div>
+                <div>
+                    Address :Attapur,HYD
+                </div>
+            </div>
+            <br>
+<center>            <div class="loc"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243731.83241017198!2d78.03512799453128!3d17.3488156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb959fee5b3bad%3A0x294b001a89bbce8f!2sKL%20University%20Aziz%20Nagar%20Hyderabad!5e0!3m2!1sen!2sin!4v1773165229833!5m2!1sen!2sin" width="400" height="350" style="border:0; text-align: center;border-radius: 5%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe></div>
+</center>
+<h2>Color Generator</h2>
+<button onclick="changeColor()">Change Background Color</button>
+
+<script>
+
+function changeColor() {
+    // 0xFFFFFF is the maximum hex color value
+    let randomNumber = Math.floor(Math.random() * 0xFFFFFF);
+    
+    // Convert number to hexadecimal
+    let hexColor = "#" + randomNumber.toString(16).padStart(6, "0");
+    
+    document.body.style.backgroundColor = hexColor;
+}
+
+</script>
+<br><br>
+<div class="img-link"> 
+    <a href="https://github.com/mohammadreyhan-web">
+    <img src="git.png" alt="gitimg" class="git" style="margin-right: 10px;"></a>
+    <a href="https://newerp.kluniversity.in/"><img src="erp.png" alt="erp" class="git"></a>
+</div>
+    <br><br>
+            <div class="footer">
+        ©2026 My PortFolio </div>
+</body>
+</html>
